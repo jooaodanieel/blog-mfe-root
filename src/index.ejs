@@ -31,7 +31,7 @@
 
     More information about shared dependencies can be found at https://single-spa.js.org/docs/recommended-setup#sharing-with-import-maps.
   -->
-  <script type="systemjs-importmap">
+  <!-- <script type="systemjs-importmap">
     {
       "imports": {
         "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
@@ -40,7 +40,7 @@
         "@mui/material": "https://unpkg.com/@mui/material@latest/umd/material-ui.development.js"
       }
     }
-  </script>
+  </script> -->
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
 
   <!-- Add your organization's prod import map URL to this script's src  -->
@@ -50,6 +50,10 @@
   <script type="systemjs-importmap">
     {
       "imports": {
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+        "react": "https://cdn.jsdelivr.net/npm/react@17/umd/react.production.min.js",
+        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.production.min.js",
+        "@mui/material": "https://unpkg.com/@mui/material@latest/umd/material-ui.development.js",
         "@digidojo-blog/reactions-mfe": "//localhost:8080/digidojo-blog-reactions-mfe.js",
         "@digidojo-blog/content-mfe": "//localhost:8081/digidojo-blog-content-mfe.js",
         "@digidojo-blog/root-config": "//localhost:9000/digidojo-blog-root-config.js"
@@ -60,6 +64,10 @@
   <script type="systemjs-importmap">
     {
       "imports": {
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+        "react": "https://cdn.jsdelivr.net/npm/react@17/umd/react.production.min.js",
+        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17/umd/react-dom.production.min.js",
+        "@mui/material": "https://unpkg.com/@mui/material@latest/umd/material-ui.development.js",
         "@digidojo-blog/reactions-mfe": "https://engagement-mfe.onrender.com/digidojo-blog-reactions-mfe.js",
         "@digidojo-blog/content-mfe": "https://content-mfe.onrender.com/digidojo-blog-content-mfe.js",
         "@digidojo-blog/root-config": "https://digidojo-blog.onrender.com/digidojo-blog-root-config.js"
