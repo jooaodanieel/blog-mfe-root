@@ -1,6 +1,7 @@
 <single-spa-router>
+
   <route path="posts">
-    <div class="post-body">
+    <div class="container">
       <main>
         <application name="@digidojo-blog/content-mfe"></application>
       </main>
@@ -9,4 +10,16 @@
       </aside>
     </div>
   </route>
+
+
+
+  <route default>
+    <div class="container">
+      <main></main>
+      <aside>
+        <application name="@digidojo-blog/archive-mfe"></application>
+      </aside>
+    </div>
+  </route>
+  
 </single-spa-router>

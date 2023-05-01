@@ -56,6 +56,7 @@
         "@mui/material": "https://unpkg.com/@mui/material@latest/umd/material-ui.development.js",
         "@digidojo-blog/reactions-mfe": "//localhost:8080/digidojo-blog-reactions-mfe.js",
         "@digidojo-blog/content-mfe": "//localhost:8081/digidojo-blog-content-mfe.js",
+        "@digidojo-blog/archive-mfe": "//localhost:8082/digidojo-blog-archive-mfe.js",
         "@digidojo-blog/root-config": "//localhost:9000/digidojo-blog-root-config.js"
       }
     }
@@ -70,6 +71,7 @@
         "@mui/material": "https://unpkg.com/@mui/material@latest/umd/material-ui.development.js",
         "@digidojo-blog/reactions-mfe": "https://engagement-mfe.onrender.com/digidojo-blog-reactions-mfe.js",
         "@digidojo-blog/content-mfe": "https://content-mfe.onrender.com/digidojo-blog-content-mfe.js",
+        "@digidojo-blog/archive-mfe": "https://archive-mfe.onrender.com/digidojo-blog-archive-mfe.js",
         "@digidojo-blog/root-config": "https://digidojo-blog.onrender.com/digidojo-blog-root-config.js"
       }
     }
@@ -93,21 +95,18 @@
 
 
   <style>
-
-    .post-body {
-      display: grid;
-      grid-template-areas: 
-      "main main aside"
-      ;
-
+    
+    .container {
       margin: 0px 10rem;
+      display: grid;
+      grid-template-areas: "main main aside";
     }
 
-    .post-body > main {
+    .container > main {
       grid-area: main;
     }
 
-    .post-body > aside {
+    .container > aside {
       grid-area: aside;
       display: flex;
       flex-direction: row-reverse;
