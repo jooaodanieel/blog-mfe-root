@@ -16,6 +16,7 @@ module.exports = (webpackConfigEnv, argv) => {
     // modify the webpack config however you'd like to by adding to this object
     plugins: [
       new HtmlWebpackPlugin({
+        favicon: "./assets/favicon.ico",
         inject: false,
         template: "src/index.ejs",
         templateParameters: {
